@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAEC Results Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header-banner {
+            background: linear-gradient(to right, #1e3a8a, #3b82f6);
+        }
+
+        .advert-area {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            min-height: 400px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <img src="https://www.waecdirect.org/images/top.jpg" alt="WAEC Header"
+                class="w-full h-auto max-h-24 object-contain">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="header-banner text-white py-2">
+        <div class="container mx-auto px-4 text-sm">
+            <span>Click here to visit our corporate website | FAQ | Result Checker | Talons Merchants/Outlets | Take
+                Survey</span>
+        </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <div class="header-banner text-white py-3">
+        <div class="container mx-auto px-4">
+            <h2 class="text-xl font-semibold">Home</h2>
+        </div>
+    </div>
+
+    <!-- Alert Banner -->
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-3">
+        <div class="container mx-auto px-4">
+            <p class="text-sm font-semibold">FOR A LIST OF e-PIN MEGA DEALER'S OUTLETS, <span class="text-red-600">CLICK
+                    HERE</span></p>
+        </div>
+    </div>
+
+    <!-- Notice Banner -->
+    <div class="bg-red-600 text-white p-3">
+        <div class="container mx-auto px-4">
+            <p class="text-sm font-semibold">SECOND SERIES Registration is still progressing. Closing date for
+                Generation of PIN is Friday, October 31st, 2025. Intending candidates are therefore advised to conclude
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex gap-6">
+            <!-- Left Sidebar - Form -->
+            <aside class="w-64 flex-shrink-0">
+                <div class="bg-yellow-100 border-2 border-yellow-600 rounded-lg p-4">
+                    <h3 class="text-red-600 font-bold text-center mb-4">Please, Make Your Complaints</h3>
+
+                    <form class="space-y-3">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Examination Number</label>
+                            <select class="w-full border border-gray-400 rounded px-2 py-1 text-sm">
+                                <option>Examination Year: 2025</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Examination</label>
+                            <select class="w-full border border-gray-400 rounded px-2 py-1 text-sm">
+                                <option>PRIVATE CANDIDATE RESULTS</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">PIN</label>
+                            <input type="text" class="w-full border border-gray-400 rounded px-2 py-1 text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Serial No</label>
+                            <input type="text" class="w-full border border-gray-400 rounded px-2 py-1 text-sm">
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 rounded">
+                            Submit
+                        </button>
+                    </form>
+
+                    <div class="mt-4 text-xs space-y-2">
+                        <p class="font-semibold">Have you had any problem checking your result today?</p>
+                        <p>Send an email to:</p>
+                        <p class="font-bold">Tel: 01-9843230<br>07090VATEBRA (0700 9283272)</p>
+                    </div>
+                </div>
+
+                <!-- Instructions -->
+                <div class="mt-4 bg-white rounded-lg p-4 text-xs space-y-2">
+                    <ol class="list-decimal list-inside space-y-1">
+                        <li><strong>Enter your 10-digit WAEC Examination Number.</strong> (This is your 7-Digit centre
+                            number followed by your 3-digit candidate number eg 1234567B).</li>
+                        <li>For examination year < 1999, enter your 8-Digit WAEC Examination Number. (This is your
+                                5-Digit centre number followed by your 3-digit candidate number eg 12345678).</li>
+                        <li><strong>Enter the 4 digits of your Examination Year eg 2002</strong></li>
+                        <li><strong>Enter the e-PIN Voucher Number</strong></li>
+                        <li><strong>Enter the Personal Identification Number (PIN) on your e-PIN</strong></li>
+                        <li><strong>Click Submit and wait for the results window to open</strong></li>
+                        <li><strong>NOTE:</strong> If you have exhausted the allowable number of uses on your scratch
+                            card, you will be required to purchase a new result checker card in order to continue
+                            checking your result online.</li>
+                    </ol>
+                </div>
+
+                <!-- App Store Buttons -->
+                <div class="mt-4 flex gap-2">
+                    <img src="https://via.placeholder.com/120x40/000000/ffffff?text=App+Store" alt="App Store"
+                        class="h-10">
+                    <img src="https://via.placeholder.com/120x40/000000/ffffff?text=Google+Play" alt="Google Play"
+                        class="h-10">
+                </div>
+
+                <!-- Advert Space -->
+                <div class="mt-4 bg-white rounded-lg p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-4">ADVERT SPACE</h3>
+                    <p class="text-sm mb-2">Get anything you want people to know about?</p>
+                    <p class="text-lg font-bold mb-4">You can place<br>your advert here.</p>
+                    <p class="text-xs mb-4">Send an E-mail to<br><span
+                            class="font-bold">productmarketing@vatebra.com</span></p>
+                    <img src="http://adclientlive.fleettechltd.com//images/350_430_2.jpg" alt="Vatebra"
+                        class="mx-auto max-w-full h-auto">
+                </div>
+            </aside>
+
+            <!-- Main Content Area - Purple Advert Section -->
+            <main class="flex-1">
+                <!-- Purple Advert Area with Side-by-Side Display -->
+                <div class="advert-area rounded-lg p-6 mb-6">
+                    <div class="flex flex-wrap gap-[30px]" id="advert-container">
+                        <!-- Advert 1 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=MIVA+Ad+1"
+                                alt="Advertisement 1" class="w-full h-auto">
+                        </div>
+                        <!-- Advert 2 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://via.placeholder.com/400x300/6366f1/ffffff?text=MIVA+Ad+2"
+                                alt="Advertisement 2" class="w-full h-auto">
+                        </div>
+                        <!-- Advert 3 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=MIVA+Ad+3"
+                                alt="Advertisement 3" class="w-full h-auto">
+                        </div>
+                        <!-- Advert 4 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://via.placeholder.com/400x300/6366f1/ffffff?text=MIVA+Ad+4"
+                                alt="Advertisement 4" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ and SMS Usage Section -->
+                <div class="grid grid-cols-2 gap-6 mb-6">
+                    <!-- FAQ -->
+                    <div class="bg-white rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4">Frequently Asked Questions (FAQ)</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="text-blue-600">• What is an e-PIN?</li>
+                            <li class="text-blue-600">• Where can I buy an e-PIN?</li>
+                            <li class="text-blue-600">• How many times can I check my results?</li>
+                            <li class="text-blue-600">• Can I use one e-PIN to check more than one result?</li>
+                            <li class="text-blue-600">• I have a problem with my e-mail result</li>
+                            <li class="text-blue-600">• I have been trying to check my result but the WAEC page is not
+                                loading</li>
+                            <li class="text-blue-600">• I want to the WAEC portal and filled in the required details but
+                                I was not able to see a page to check my result for the candidate in the specified year.
+                                Please what do I do?</li>
+                            <li class="text-blue-600 cursor-pointer">...more</li>
+                        </ul>
+                    </div>
+
+                    <!-- New Improved SMS Usage -->
+                    <div class="bg-white rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4">New Improved SMS Usage!</h3>
+                        <div class="space-y-3 text-sm">
+                            <p class="font-semibold">Send SMS in the format below:</p>
+                            <p class="bg-gray-100 p-2 rounded">WAEC*ExamNo*PIN*ExamYear</p>
+                            <p>to <span class="font-bold">32327</span> (MTN, Glo, Airtel & 9mobile subscribers)</p>
+                            <p class="font-semibold">For example:</p>
+                            <p class="bg-gray-100 p-2 rounded">WAEC*5610101*123456789012*2007</p>
+                            <p>(MTN, Glo, Airtel & 9mobile subscribers)</p>
+                            <p class="font-semibold">Format your entry strictly in the format above. There should be no
+                                space for the message.</p>
+                            <p class="font-semibold text-red-600">Wait for your result to be delivered to your phone via
+                                SMS (Text Only)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Advert -->
+                <div class="bg-yellow-300 rounded-lg p-6 text-center">
+                    <img src="https://via.placeholder.com/600x200/fef08a/000000?text=Buy+WAEC+Result+Checkers+and+WAEC+GCE+Here"
+                        alt="Bottom Ad" class="mx-auto rounded">
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-8 py-4">
+        <div class="container mx-auto px-4 text-right">
+            <p class="text-sm">Powered by <img src="http://adclientlive.fleettechltd.com//images/350_430_2.jpg"
+                    alt="Vatebra" class="inline-block ml-2 h-8"></p>
+        </div>
+    </footer>
+
+    <script>
+        const API_BASE_URL = 'https://adserveapi.vatebra.org/api';
+        const websiteUrl = 'https://www.google.ng';
+        const platformName = 'Maga Town';
+
+        const defaultDimension = {
+            width: 150,
+            height: 150
+        }
+
+        class AdvertTracker {
+            constructor(advertId, advertData) {
+                this.advertId = advertId;
+                this.advertData = advertData;
+                this.ipAddress = "105.112.199.105";
+                this.impressionSent = false;
+                this.viewStartTime = null;
+                this.viewThreshold = 1000; // 1 second to count as a view
+                this.visibilityThreshold = 0.5; // 50% visible
+                this.observer = null;
+                this.isCurrentlyVisible = false;
+                this.viewTracked = false;
+            }
+
+            // Track impression (ad loaded on page)
+            async trackImpression() {
+                if (this.impressionSent) return;
+
+                try {
+                    await fetch(`${API_BASE_URL}/AdvertDisplay/track-impression`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            "advertId": this.advertId,
+                            "websiteUrl": websiteUrl,
+                            "userAgent": navigator.userAgent,
+                            "referrer": document.referrer,
+                            "ipAddress": this.ipAddress
+                        })
+                    });
+                    this.impressionSent = true;
+                    console.log('Impression tracked for advert:', this.advertId);
+                } catch (error) {
+                    console.error('Failed to track impression:', error);
+                }
+            }
+
+            // Track view (ad viewed for specified duration)
+            async trackView() {
+                try {
+                    await fetch(`${API_BASE_URL}/AdvertDisplay/track-view`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            "advertId": this.advertId,
+                            "websiteUrl": websiteUrl,
+                            "userAgent": navigator.userAgent,
+                            "duration": this.advertData.duration,
+                            "ipAddress": this.ipAddress
+                        })
+                    });
+                    console.log('View tracked for advert:', this.advertId);
+                } catch (error) {
+                    console.error('Failed to track view:', error);
+                }
+            }
+
+            // Track click
+            async trackClick() {
+                try {
+                    await fetch(`${API_BASE_URL}/AdvertDisplay/track-click`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            "advertId": this.advertId,
+                            "websiteUrl": websiteUrl,
+                            "userAgent": navigator.userAgent,
+                            "referrer": document.referrer,
+                            "ipAddress": this.ipAddress,
+                            "targetUrl": this.advertData.advertUrl
+                        })
+                    });
+                    console.log('Click tracked for advert:', this.advertId);
+                } catch (error) {
+                    console.error('Failed to track click:', error);
+                }
+            }
+
+            // Setup intersection observer for view tracking
+            setupViewTracking(element) {
+                this.observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && entry.intersectionRatio >= this.visibilityThreshold) {
+                            this.isCurrentlyVisible = true;
+                            if (!this.viewStartTime && !this.viewTracked) {
+                                this.viewStartTime = Date.now();
+                                setTimeout(() => {
+                                    if (this.viewStartTime && this.isCurrentlyVisible && !this.viewTracked) {
+                                        this.trackView();
+                                        this.viewTracked = true;
+                                    }
+                                }, this.viewThreshold);
+                            }
+                        } else {
+                            this.isCurrentlyVisible = false;
+                            this.viewStartTime = null;
+                        }
+                    });
+                }, {
+                    threshold: [0, 0.5, 1.0]
+                });
+
+                this.observer.observe(element);
+            }
+
+            // Cleanup observer to prevent memory leaks
+            destroy() {
+                if (this.observer) {
+                    this.observer.disconnect();
+                    this.observer = null;
+                }
+            }
+        }
+
+        class AdvertRenderer {
+            constructor() {
+                this.displayElement = document.getElementById('advert-container');
+                this.trackers = [];
+                this.adverts = [];
+            }
+
+            parseDimensions(dimensionString) {
+                if (!dimensionString) {
+                    return defaultDimension
+                }
+
+                const match = dimensionString.match(/(\d+)\s*x\s*(\d+)/i);
+
+                if (!match) {
+                    return defaultDimension
+                }
+
+                const width = parseInt(match[1], 10);
+                const height = parseInt(match[2], 10);
+
+                if (isNaN(width) || isNaN(height)) {
+                    return defaultDimension
+                }
+
+                return { width, height };
+            }
+
+            async fetchAdverts() {
+                try {
+                    const response = await fetch(`${API_BASE_URL}/AdvertDisplay/get-adverts?websitePlatform=${platformName}`);
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+
+                    if (data.returnedObject && Array.isArray(data.returnedObject) && data.returnedObject.length > 0) {
+                        this.adverts = data.returnedObject;
+                        this.renderAdverts();
+                    } else {
+                        this.showError('No adverts available');
+                    }
+                } catch (error) {
+                    console.error('Error fetching adverts:', error);
+                    this.showError('Failed to load adverts');
+                }
+            }
+
+            renderAdverts() {
+                // Clear existing content
+                this.displayElement.innerHTML = '';
+
+                // Display all adverts side by side with 30px spacing
+                this.adverts.forEach((advert) => {
+                    const tracker = new AdvertTracker(advert.id, advert);
+                    this.trackers.push(tracker);
+
+                    const dimensions = this.parseDimensions(advert.dimension);
+
+                    const advertDiv = document.createElement('div');
+                    advertDiv.className = 'bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition-shadow flex items-center justify-center';
+                    advertDiv.style.width = `${dimensions.width}px`;
+                    advertDiv.style.height = `${dimensions.height}px`;
+                    advertDiv.innerHTML = `
+                        <img src="${advert.imagePath}" 
+                             alt="${advert.name}" 
+                             class="w-full h-full object-cover"
+                             id="advert-${advert.id}">
+                    `;
+
+                    this.displayElement.appendChild(advertDiv);
+
+                    const advertElement = document.getElementById(`advert-${advert.id}`);
+
+                    // Track impression immediately
+                    tracker.trackImpression();
+
+                    // Setup view tracking
+                    tracker.setupViewTracking(advertElement);
+
+                    // Track clicks
+                    advertDiv.addEventListener('click', async (e) => {
+                        e.preventDefault();
+                        await tracker.trackClick();
+
+                        // Redirect to target URL if provided
+                        if (advert.advertUrl) {
+                            window.open(advert.advertUrl, '_blank');
+                        }
+                    });
+                });
+            }
+
+            showError(message) {
+                this.displayElement.innerHTML = `
+                    <div class="col-span-2 bg-red-100 text-red-700 p-4 rounded-lg text-center">
+                        ${message}
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize and fetch adverts on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const renderer = new AdvertRenderer();
+            renderer.fetchAdverts();
+        });
+    </script>
+</body>
+
+</html>
