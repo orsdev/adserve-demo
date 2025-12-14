@@ -57,15 +57,11 @@ The interviewer will ask follow-up questions based on your resume. Be ready to:
 
 **Answer:**
 
-> I ensure code quality by being deliberate about how code is written, reviewed, and validated before it reaches production.
-On a daily basis, I rely heavily on code reviews — I look for correctness, readability, edge cases, 
-and I always explain the why behind my suggestions so quality scales across the team.
-I also make sure quality is enforced early through testing and tooling. 
-I write unit tests for business logic, component tests that reflect real user behavior,
- and I’m especially careful with critical flows like payments. Tools like TypeScript,
-  ESLint, Prettier, and pre-commit hooks help catch issues before they reach production.
-Finally, I focus on architecture — using a feature-based structure and clear separation 
-of concerns so the codebase stays maintainable as it grows.”
+> I ensure code quality by being deliberate about how I write and validate my code before it reaches production. I’m very intentional about the quality of the code I write, and I use code reviews as a second layer of validation. I look for correctness, readability, and edge cases, and I explain the reasoning behind feedback so the same standards are consistently applied.
+
+I also make sure quality is enforced early through testing and tooling. I write unit tests for business logic and component tests that reflect real user behavior, especially around critical flows like payments. Tools like TypeScript, ESLint, Prettier, and pre-commit hooks help catch issues before they reach production.
+
+Finally, I focus on architecture — using a feature-based structure and clear separation of concerns so the codebase stays maintainable as it grows.”
 
 
 ---
