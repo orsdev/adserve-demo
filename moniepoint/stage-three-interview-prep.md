@@ -57,11 +57,13 @@ The interviewer will ask follow-up questions based on your resume. Be ready to:
 
 **Answer:**
 
-> I ensure code quality by being deliberate about how I write and validate my code before it reaches production. I’m very intentional about the quality of the code I write, and I use code reviews as a second layer of validation. I look for correctness, readability, and edge cases, and I explain the reasoning behind feedback so the same standards are consistently applied.
+> I ensure code quality by being deliberate about how I write and validate my code before it reaches production. I also use code reviews as a second layer of validation. I look for correctness, readability, and edge cases, and I explain the reasoning behind feedback so the same standards are consistently applied.
 
-I also make sure quality is enforced early through testing and tooling. I write unit tests for business logic and component tests that reflect real user behavior, especially around critical flows like payments. Tools like TypeScript, ESLint, Prettier, and pre-commit hooks help catch issues before they reach production.
+> I also make sure quality is enforced early through testing and tooling. I write unit tests for business logic and component tests that reflect real user behavior. Tools like TypeScript, ESLint, Prettier, and pre-commit hooks help catch issues before they reach production.
 
-Finally, I focus on architecture — using a feature-based structure and clear separation of concerns so the codebase stays maintainable as it grows.”
+> Finally, I focus on architecture — using a feature-based structure and clear separation of concerns so the codebase stays maintainable as it grows.
+
+
 
 
 ---
@@ -212,7 +214,22 @@ export default withAuth(DashboardPage);
 
 ### Answer Framework:
 
-I approach web performance monitoring in two phases: **lab data** (local/development testing) and **field data** (production/real-user monitoring). The goal is to track **Core Web Vitals**—LCP (loading), INP (interactivity), and CLS (visual stability)—along with other metrics like render times.
+>I usually approach web performance monitoring in two phases: lab data and field data.
+
+>First is lab data, which I use during development and before deployment to catch obvious issues early.
+I rely on tools like Google Lighthouse in Chrome DevTools or PageSpeed Insights to get automated audits and clear recommendations for Core Web Vitals, accessibility, and best practices.
+
+>I also use the Chrome DevTools Performance tab to analyze and optimize the loading speed and runtime performance.
+
+>Since I work a lot with React, I use the React Profiler to detect unnecessary re-renders and slow components, then optimize with techniques like React.memo, useMemo, and useCallback where it actually makes sense.
+
+>The second phase is field data, which is more important long-term because lab tests don’t reflect real user devices or network conditions.
+>In production, Core Web Vitals are monitored using real-user data and collected by tools like Google Analytics and Sentry to automatically detect, track, debug, and fix errors and performance issues in code .
+
+--------------------------
+* Source maps are used to translate production code back to the original source so developers can debug accurately ***
+
+<!-- I approach web performance monitoring in two phases: **lab data** (local/development testing) and **field data** (production/real-user monitoring). The goal is to track **Core Web Vitals**—LCP (loading), INP (interactivity), and CLS (visual stability)—along with other metrics like render times.
 
 #### During Development (Before Deployment):
 
@@ -225,13 +242,13 @@ I approach web performance monitoring in two phases: **lab data** (local/develop
 
 > Real-user data is crucial because lab tests don't capture real network conditions or device variability.
 
--  I send Web Vitals data to tools like Google Analytics, Sentry (for performance tracing and errors). Also I use PageSpeed Insights for aggregated real-world data.
+-  I send Web Vitals data to tools like Google Analytics, Sentry (for performance tracing and errors). Also I use PageSpeed Insights for aggregated real-world data. -->
 ---
 
 ## How to Ensure Efficiency of a React Application
 
 ### Answer:
-I approach React performance proactively — I try to prevent issues before jumping into optimization.
+I’m proactive about React performance. I try to prevent issues up front instead of optimizing too early.
 
 First, I focus on rendering efficiency: I keep state as close as possible to where it’s used, avoid unnecessary re-renders with proper dependency arrays, and use memoization tools like React.memo, useMemo, and useCallback when there’s a real benefit. For large lists, I use virtualization with libraries like react-window.
 
